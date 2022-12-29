@@ -11,9 +11,11 @@ import Kingfisher
 
 var BOOTSTRAP_RELAYS = [
     "wss://relay.damus.io",
-    "wss://nostr-relay.wlvs.space",
-    "wss://nostr.fmt.wiz.biz",
-    "wss://nostr.oxtr.dev",
+    //"wss://nostr-relay.wlvs.space",
+    //"wss://nostr.fmt.wiz.biz",
+    //"wss://nostr.oxtr.dev",
+    "wss://nostr.robotechy.com"
+    
 ]
 
 struct TimestampedProfile {
@@ -141,7 +143,6 @@ struct ContentView: View {
             case .notifications:
                 TimelineView(events: $home.notifications, loading: $home.loading, damus: damus, show_friend_icon: true, filter: { _ in true })
                     .navigationTitle("Notifications")
-                
             case .dms:
                 DirectMessagesView(damus_state: damus_state!)
                     .environmentObject(home.dms)
@@ -151,6 +152,7 @@ struct ContentView: View {
             }
         }
         .navigationBarTitle(selected_timeline == .home ?  "Home" : "Global", displayMode: .inline)
+        .background(Color("ContentBackground"))
     }
     
     var MaybeSearchView: some View {
@@ -229,6 +231,7 @@ struct ContentView: View {
 
             TabBar(new_events: $home.new_events, selected: $selected_timeline, action: switch_timeline)
                 .padding()
+                .background(Color("Background"))
         }
         .onAppear() {
             self.connect()
@@ -359,6 +362,7 @@ struct ContentView: View {
         .onReceive(timer) { n in
             self.damus_state?.pool.connect_to_disconnected()
         }
+        .background(Color("Background"))
     }
     
     func switch_timeline(_ timeline: Timeline) {

@@ -19,6 +19,7 @@ struct EmptyTimelineView: View {
         }
         .foregroundColor(.gray)
         .padding()
+        .background(Color("Background"))
     }
 }
 

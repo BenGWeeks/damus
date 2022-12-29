@@ -27,8 +27,28 @@ func timeline_bit(_ timeline: Timeline) -> Int {
     }
 }
 
+struct TabBar: View {
+    @Binding var new_events: NewEventsBits
+    @Binding var selected: Timeline?
     
-struct TabButton: View {
+    let action: (Timeline) -> ()
+    
+    var body: some View {
+        VStack {
+            Divider()
+            HStack {
+                TabBarIcon(timeline: .home, img: "ic-home", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("1")
+                TabBarIcon(timeline: .search, img: "ic-search", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("2")
+                Image("ic-add")
+                    .frame(width:60,height:60)
+                TabBarIcon(timeline: .dms, img: "ic-messages", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("3")
+                TabBarIcon(timeline: .notifications, img: "ic-notifications", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("4")
+            }
+        }
+    }
+}
+    
+struct TabBarIcon: View {
     let timeline: Timeline
     let img: String
     
@@ -42,12 +62,15 @@ struct TabButton: View {
             Tab
             
             if new_events.is_set(timeline) {
-                Circle()
-                    .size(CGSize(width: 8, height: 8))
-                    .frame(width: 10, height: 10, alignment: .topTrailing)
-                    .alignmentGuide(VerticalAlignment.center) { a in a.height + 2.0 }
-                    .alignmentGuide(HorizontalAlignment.center) { a in a.width - 12.0 }
-                    .foregroundColor(.accentColor)
+                ZStack {
+                    Circle()
+                        //.size(CGSize(width: 8, height: 8))
+                        .frame(width: 18, height: 18, alignment: .topTrailing)
+                        .alignmentGuide(VerticalAlignment.center) { a in a.height + 2.0 }
+                        .alignmentGuide(HorizontalAlignment.center) { a in a.width - 12.0 }
+                        .foregroundColor(.accentColor)
+                    Text(String(new_events.bits))
+                }
             }
         }
     }
@@ -57,30 +80,31 @@ struct TabButton: View {
             action(timeline)
             new_events = NewEventsBits(prev: new_events, unsetting: timeline)
         }) {
-            Label("", systemImage: selected == timeline ? "\(img).fill" : img)
-                .contentShape(Rectangle())
-                .frame(maxWidth: .infinity, minHeight: 30.0)
+            //Label("", systemImage: selected == timeline ? "\(img).fill" : img)
+            if selected == timeline {
+                Image(img)
+                    .foregroundColor(.accentColor)
+                    .contentShape(Rectangle())
+                    .frame(maxWidth: .infinity, minHeight: 30.0)
+            }
+            else {
+                Image(img)
+                    .contentShape(Rectangle())
+                    .frame(maxWidth: .infinity, minHeight: 30.0)
+            }
         }
         .foregroundColor(selected != timeline ? .gray : .primary)
     }
 }
-    
 
-struct TabBar: View {
-    @Binding var new_events: NewEventsBits
-    @Binding var selected: Timeline?
-    
+/*
+struct TabBar_Previews: PreviewProvider {
+    @State var new_events: NewEventsBits
+    @State var selected: Timeline?
     let action: (Timeline) -> ()
     
-    var body: some View {
-        VStack {
-            Divider()
-            HStack {
-                TabButton(timeline: .home, img: "house", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("1")
-                TabButton(timeline: .dms, img: "bubble.left.and.bubble.right", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("2")
-                TabButton(timeline: .search, img: "magnifyingglass.circle", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("3")
-                TabButton(timeline: .notifications, img: "bell", selected: $selected, new_events: $new_events, action: action).keyboardShortcut("4")
-            }
-        }
+    static var previews: some View {
+        TabBar(new_events: $new_events, selected: nil, action: nil)
     }
 }
+*/

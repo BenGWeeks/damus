@@ -27,7 +27,7 @@ struct InnerTimelineView: View {
                     //let tm = ThreadModel(event: inner_event_or_self(ev: ev), damus_state: damus)
                     //let is_chatroom = should_show_chatroom(ev)
                     //let tv = ThreadView(thread: tm, damus: damus, is_chatroom: is_chatroom)
-                                
+                    
                     NavigationLink(destination: BuildThreadV2View(
                         damus: damus,
                         event_id: ev.id
@@ -36,6 +36,8 @@ struct InnerTimelineView: View {
                     }
                     .isDetailLink(true)
                     .buttonStyle(PlainButtonStyle())
+                    .background(Color("ReachBackground"))
+                    .cornerRadius(12)
                 }
             }
         }
