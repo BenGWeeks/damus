@@ -2,7 +2,7 @@
 //  DamusNotificationsView.swift
 //  damus
 //
-//  Created by user232838 on 12/29/22.
+//  Created by Ben Weeks on 12/29/22.
 //
 
 import SwiftUI
