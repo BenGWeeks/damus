@@ -218,9 +218,10 @@ struct ContentView: View {
     }
 
     var body: some View {
-            //ZStack {
+        ZStack {
+            if let damus = self.damus_state {
+
                 VStack(alignment: .leading, spacing: 0) {
-                    if let damus = self.damus_state {
                     NavigationView {
                         SideMenuView(damus_state: damus_state!, isSidebarVisible: $isSideBarOpened)
                         MainContent(damus: damus)
@@ -274,6 +275,24 @@ struct ContentView: View {
                                             Label("", systemImage: "gear")
                                         }
                                         .buttonStyle(PlainButtonStyle())
+
+                                    }
+
+                                    ToolbarItem(placement: .navigationBarTrailing) {
+                                        HStack(alignment: .center) {
+                                            if home.signal.signal != home.signal.max_signal {
+                                                Text("\(home.signal.signal)/\(home.signal.max_signal)")
+                                                    .font(.callout)
+                                                    .foregroundColor(.gray)
+                                            }
+
+                                            /*
+                                             NavigationLink(destination: ConfigView(state: damus_state!).environmentObject(user_settings)) {
+                                             Label("", systemImage: "gear")
+                                             }
+                                             .buttonStyle(PlainButtonStyle())
+                                             */
+                                        }
                                     }
                                 }
                             }
@@ -367,9 +386,33 @@ struct ContentView: View {
                     //friend_events = friend_events.filter { $0.pubkey != pk }
                 }
             }
-            .onReceive(handle_notify(.follow)) { notif in
-                guard let privkey = self.privkey else {
-                    return
+        }
+        .onAppear() {
+            self.connect()
+            //KingfisherManager.shared.cache.clearDiskCache()
+            setup_notifications()
+        }
+        .sheet(item: $active_sheet) { item in
+            switch item {
+            case .post:
+                PostView(replying_to: nil, references: [])
+            case .reply(let event):
+                ReplyView(replying_to: event, damus: damus_state!)
+            }
+        }
+        .onOpenURL { url in
+            guard let link = decode_nostr_uri(url.absoluteString) else {
+                return
+            }
+
+            switch link {
+            case .ref(let ref):
+                if ref.key == "p" {
+                    active_profile = ref.ref_id
+                    profile_open = true
+                } else if ref.key == "e" {
+                    active_event_id = ref.ref_id
+                    thread_open = true
                 }
 
                 let fnotify = notif.object as! FollowTarget
@@ -410,10 +453,29 @@ struct ContentView: View {
                     print("post cancelled")
                 }
             }
-            .onReceive(timer) { n in
-                self.damus_state?.pool.connect_to_disconnected()
+        }
+        .onReceive(handle_notify(.post)) { obj in
+            guard let privkey = self.privkey else {
+                return
             }
-        //}
+
+            let post_res = obj.object as! NostrPostResult
+            switch post_res {
+            case .post(let post):
+                print("post \(post.content)")
+                let new_ev = post_to_event(post: post, privkey: privkey, pubkey: pubkey)
+                self.damus_state?.pool.send(.event(new_ev))
+            case .cancel:
+                active_sheet = nil
+                print("post cancelled")
+            }
+        }
+        .onReceive(timer) { n in
+            self.damus_state?.pool.connect_to_disconnected()
+        }
+
+
+
     }
 
     func switch_timeline(_ timeline: Timeline) {
@@ -471,7 +533,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(keypair: Keypair(pubkey: "3efdaebb1d8923ebd99c9e7ace3b4194ab45512e2be79c1b7d68d9243e0d2681", privkey: nil))
     }
 }
-
 
 func get_since_time(last_event: NostrEvent?) -> Int64? {
     if let last_event = last_event {
