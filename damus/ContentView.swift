@@ -216,11 +216,7 @@ struct ContentView: View {
                                         Button {
                                             isSideBarOpened.toggle()
                                         } label: {
-                                            if let picture = damus_state?.profiles.lookup(id: pubkey)?.picture {
-                                                ProfilePicView(pubkey: damus_state!.pubkey, size: 32, highlight: .none, profiles: damus_state!.profiles, picture: picture)
-                                            } else {
-                                                Image(systemName: "person.fill")
-                                            }
+                                            ProfilePicView(pubkey: damus_state!.pubkey, size: 32, highlight: .none, profiles: damus_state!.profiles)
                                         }
                                     }
                                 }
