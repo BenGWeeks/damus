@@ -71,15 +71,21 @@ struct PostView: View {
             .padding([.top, .bottom], 4)
 
             ZStack(alignment: .topLeading) {
-                TextEditor(text: $post)
-                    .focused($focus)
-                    .textInputAutocapitalization(.sentences)
-                if post.isEmpty {
-                    Text(POST_PLACEHOLDER)
-                        .padding(.top, 8)
-                        .padding(.leading, 4)
-                        .foregroundColor(Color(uiColor: .placeholderText))
-                        .allowsHitTesting(false)
+                VStack{
+                    TextEditor(text: $post)
+                        .focused($focus)
+                        .textInputAutocapitalization(.sentences)
+                    if post.isEmpty {
+                        Text(POST_PLACEHOLDER)
+                            .padding(.top, 8)
+                            .padding(.leading, 4)
+                            .foregroundColor(Color(uiColor: .placeholderText))
+                            .allowsHitTesting(false)
+                    }
+                    Text("BEFORE")
+                    TaggingView()
+                        //.symbol = "@"
+                    Text("AFTER")
                 }
             }
         }
@@ -92,3 +98,8 @@ struct PostView: View {
     }
 }
 
+struct PostView_Previews: PreviewProvider {
+    static var previews: some View {
+        PostView(replying_to: nil, references: [])
+    }
+}
