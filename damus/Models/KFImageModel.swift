@@ -67,12 +67,39 @@ struct CustomImageProcessor: ImageProcessor {
     let identifier = "com.damus.customimageprocessor"
     
     func process(item: ImageProcessItem, options: KingfisherParsedOptionsInfo) -> KFCrossPlatformImage? {
+    //func process(item: ImageProcessItem, options: KingfisherParsedOptionsInfo, completion: @escaping (KFCrossPlatformImage?) -> Void) {
+    //However, this doesn't confirm to the protocol.
         
         switch item {
         case .image(_):
             // This case will never run
             return DefaultImageProcessor.default.process(item: item, options: options)
         case .data(let data):
+            
+            var returnImage = DefaultImageProcessor.default.process(item: item, options: options)
+            
+            // Detect NSFW images (test on @npub189dj7es2ft44w0f3ncum4yaze4flvtnyzcu0u77gekeymv038x2sa63a0t for example)
+            //if #available(iOS 12.0, *) {
+                let detector = NSFWDetector.shared
+                guard let image = DefaultImageProcessor.default.process(item: item, options: options) else { return DefaultImageProcessor.default.process(item: item, options: options) }
+            //let image = { result in
+                detector.check(image: image, completion: { result in
+                    switch result {
+                    case let .success(nsfwConfidence: confidence):
+                        print("NSFW confidence = ", confidence)
+                        if confidence > 0.5 {
+                            // 😱🙈😏
+                            // return KingfisherWrapper.image(data: data, options: options)?.kf.blurred(withRadius: 5)
+                            returnImage = image.kf.blurred(withRadius: 5)
+                        } else {
+                            // ¯\_(ツ)_/¯
+                            returnImage = image
+                        }
+                    default:
+                        returnImage = image
+                    }
+                })
+            //}
             
             // Handle large image size
             if data.count > maxSize {
@@ -84,7 +111,8 @@ struct CustomImageProcessor: ImageProcessor {
                 return image.kf.scaled(to: options.scaleFactor)
             }
             
-            return DefaultImageProcessor.default.process(item: item, options: options)
+            //return DefaultImageProcessor.default.process(item: item, options: options)
+            return returnImage
         }
     }
 }
