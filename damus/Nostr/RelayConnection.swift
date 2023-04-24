@@ -27,9 +27,11 @@ final class RelayConnection: WebSocketDelegate {
     }()
     private var handleEvent: (NostrConnectionEvent) -> ()
     private let url: URL
+    private let useTor: Bool
 
     init(url: URL, handleEvent: @escaping (NostrConnectionEvent) -> ()) {
         self.url = url
+        self.useTor = url.host?.hasSuffix(".onion") ?? false
         self.handleEvent = handleEvent
     }
     
