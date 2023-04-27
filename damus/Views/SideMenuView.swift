@@ -12,6 +12,8 @@ struct SideMenuView: View {
     @Binding var isSidebarVisible: Bool
     @State var confirm_logout: Bool = false
     
+    private let nfcWriter = NFCWriter()
+    
     @State private var showQRCode = false
     
     @Environment(\.colorScheme) var colorScheme
@@ -132,6 +134,7 @@ struct SideMenuView: View {
                     Divider()
                     
                     HStack() {
+                        // MARK: Sign-out
                         Button(action: {
                             //ConfigView(state: damus_state)
                             if damus_state.keypair.privkey == nil {
@@ -148,6 +151,19 @@ struct SideMenuView: View {
                         
                         Spacer()
                         
+                        // MARK: NFC Tool
+                        Button(action: {
+                            if let urlComponent = URLComponents(string: "nostr:" + (bech32_pubkey(damus_state.pubkey) ?? damus_state.pubkey).lowercased()) {
+                                nfcWriter.writeNDEFMessage(payload: urlComponent)
+                                nfcWriter.beginSession()
+                            }
+                        }, label: {
+                            Label("", systemImage: "sensor.tag.radiowaves.forward")
+                                .font(.title)
+                                .foregroundColor(textColor())
+                        })
+                        
+                        // MARK: QR Code
                         Button(action: {
                             showQRCode.toggle()
                         }, label: {
@@ -202,6 +218,7 @@ struct SideMenuView: View {
     }
 }
 
+// MARK: - Preview Provider
 struct Previews_SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
         let ds = test_damus_state()
