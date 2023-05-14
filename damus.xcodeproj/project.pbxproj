@@ -2131,15 +2131,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = damus/damus.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_ASSET_PATHS = "\"damus/Preview Content\"";
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = 8K4M3BNB2D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = damus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Damus;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "The NFC functionality is used to write your nPub to an NFC chip for in-person zapping.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Damus needs access to your camera if you want to upload photos from it";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Local authentication to access private key";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Damus needs access to your microphone if you want to upload recorded videos from it";
@@ -2158,8 +2160,9 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damus2;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.knowall.damus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -2178,15 +2181,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = damus/damus.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_ASSET_PATHS = "\"damus/Preview Content\"";
-				DEVELOPMENT_TEAM = XK7H4JAB3D;
+				DEVELOPMENT_TEAM = 8K4M3BNB2D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = damus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Damus;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "The NFC functionality is used to write your nPub to an NFC chip for in-person zapping.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Damus needs access to your camera if you want to upload photos from it";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Local authentication to access private key";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Damus needs access to your microphone if you want to upload recorded videos from it";
@@ -2205,8 +2210,9 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb55.damus2;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.knowall.damus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
