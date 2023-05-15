@@ -84,5 +84,6 @@ class NFCWriter: NSObject, NFCNDEFReaderSessionDelegate {
     
     func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) {
         // Perform any actions you need when the session becomes active.
+        print("NFCWriter: readerSessionDidBecomeActive is not yet implemented.")
     }
 }
