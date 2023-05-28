@@ -1,0 +1,1133 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0932437038257BB7D75F8C695517A6BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0E137FB61EECE2D1785637D6726DFE8D /* TORThread.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B553479A0AF617EE277A40AD6953D8 /* TORThread.m */; };
+		2611F177696E2A66F975380A6A454CF3 /* TORNode.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CD7753C8AAB32351F98E98A4956CAE /* TORNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26AE58409AEA2184A13D7F4708EA1F4A /* TORControlCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E035E3C619DF05A3877AF801772C2A40 /* TORControlCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E130C16B421087BB848950F31D2CF04 /* TORCircuit.h in Headers */ = {isa = PBXBuildFile; fileRef = FE34F42BB67E40E77FECE8EB1D035BCE /* TORCircuit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FECDBA17371DC679189143B66BBFD0C /* Pods-damus-damusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA90292C71E62F4895C596BFAE60E80 /* Pods-damus-damusUITests-dummy.m */; };
+		335DEA30448AB10FBCB222B8277B1913 /* TORX25519KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 971CE27C675D01E45F462C8B8025D557 /* TORX25519KeyPair.m */; };
+		3815DCAC9D5105C6CAADA827A8655EB4 /* Pods-damus-damusUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A20F7047AC1368806C7D6CD008CAEE /* Pods-damus-damusUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381B7BF30DBFAAC1DAE2B1880D164436 /* NSBundle+GeoIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 824384084E72042E50C90D683F747183 /* NSBundle+GeoIP.m */; };
+		3A0596A742E2C53B27ECDBD23E7C068B /* TORController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665B26F2CE2619C3DFDAC160031E7E62 /* TORController.m */; };
+		436C1E979BE0B9A303FFC399A5A5D285 /* NSBundle+GeoIP.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5FCD7FC796956A37A7499AEA57C460 /* NSBundle+GeoIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45053561ADABECB5EA30D9C4EBA41A60 /* TORConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D6BAA01EEDFAF1A21AAFE26E4CDFCFE1 /* TORConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45BC107449BDC788A2627D9BAC856A19 /* TORCircuit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D736BF38E8A41095F51FDF6C147B1 /* TORCircuit.m */; };
+		494DD925F853173BE2FF6FAD9D221ED1 /* TORAuthKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 345B678C32CCCEE76C9068DD8356211E /* TORAuthKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A2AE939CE4606A1BADEA391E1AFD137 /* Pods-damus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F555AFDE2908AF0CA0DABEEB42695E /* Pods-damus-dummy.m */; };
+		56919379542627A5F6C468B420F58DBD /* Pods-damusTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E4F1EC3852BC3E32CBB73D0266F6BB /* Pods-damusTests-dummy.m */; };
+		5AB51DA4FEBA799A220B1452D854D6B8 /* TORThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED8E218A3323A2CB794EE7446EF9B17 /* TORThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EF69D098AC20C9427FE3371AB1FE328 /* TOROnionAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = F82C1E1484B849A53A6C21FC6BE0DB96 /* TOROnionAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63D9D6459EA8D96040080AB4C8AF57E3 /* TORLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A7B4287687890141C11FE3A24EE31CB /* TORLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7716277E37BB3692F5F6A271210EE66E /* TORLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3946D476E050E82B2E72DE3059943C84 /* TORLogging.m */; };
+		7C615FC17B6A4E2C68EA3FE837F48863 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7E63089C6B01F434375F565B8F3F6C4C /* TORControlReplyCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2B3AADE8E48781F37E3665C8BCBC65 /* TORControlReplyCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		882F719501F7AC5F1EA547D21AC53306 /* NSCharacterSet+PredefinedSets.h in Headers */ = {isa = PBXBuildFile; fileRef = F685FD1A9516F1F6909040899AE9EF38 /* NSCharacterSet+PredefinedSets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96B8EF98B558C8269762339D213D02AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		981BE52F31155D3529C4C842092EBB62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9BA03406DD5644B87F3248E6686B40CF /* TOROnionAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 7720E1C67DFC78F999F4DF11932EE74B /* TOROnionAuth.m */; };
+		A041118A9C829A5C8C4A0AF329147FAB /* TORConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 69759139952B09B27E708A2F6A8E409D /* TORConfiguration.m */; };
+		A1A5625731DAEB42E62CC3621AD1546A /* Pods-damusTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCBA13C207234124C78BDD609F26A8A8 /* Pods-damusTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3AB25BEE855F2BD5C2464F2CBC6487B /* TORAuthKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE7E1BE77782400D77A3E94BE179020 /* TORAuthKey.m */; };
+		CBBCBE28EFD2CD840859921D60DD6710 /* Tor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3A48FD68751EBC98E10C90C26C7C6E /* Tor-dummy.m */; };
+		CD0222471D80141ECA2D6CEDBA1C1ACC /* Tor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FAA47C00FC5E7BEC8806AC03ED764B /* Tor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC790F7FC76922B0E49592B9092A205B /* TORNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD1195A0F5855FB2CEA1ADE6D4EC7E /* TORNode.m */; };
+		E1DC10B35695A90D54149E3F5014948C /* TORController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5900C89E5FD510048AB8A4D86C1081CA /* TORController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E53A32AC0C5A6AAFEC3741D1A60BE2A9 /* NSCharacterSet+PredefinedSets.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF2BABA66BB18B0D0DA0F26C6918B4E /* NSCharacterSet+PredefinedSets.m */; };
+		EB6FAC9C605789811EB8DF3A9B65AACB /* Pods-damus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57332ACE77A61918645D042AD65FC8F9 /* Pods-damus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE461BCC39DBA6E6DA81C6FEC6AC208F /* TORX25519KeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 563DD86E3841E342DFB23ED0C24A6511 /* TORX25519KeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		570FF8DBF4330520CE3B3C08612E7189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA4383E7CE3B1B637884AC967B81A0E;
+			remoteInfo = Tor;
+		};
+		7DAB07C06FBBCD8B573F73B14BF86521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA4383E7CE3B1B637884AC967B81A0E;
+			remoteInfo = Tor;
+		};
+		BE0404BDC31B87007E078B674947154E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1683B15288211DEEE0837DE5FC75AD39;
+			remoteInfo = "Pods-damus";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01B933411B90C375DE4736AC2AB34758 /* Pods-damus-damusUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-damus-damusUITests.modulemap"; sourceTree = "<group>"; };
+		01E4F1EC3852BC3E32CBB73D0266F6BB /* Pods-damusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-damusTests-dummy.m"; sourceTree = "<group>"; };
+		05C9D90FE02F56508EE64D9E8C3AFBF3 /* Pods-damus */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-damus"; path = Pods_damus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2B3AADE8E48781F37E3665C8BCBC65 /* TORControlReplyCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORControlReplyCode.h; path = Tor/Classes/Core/TORControlReplyCode.h; sourceTree = "<group>"; };
+		11D5195979703163B06F3A967BD1D7B0 /* Tor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Tor.modulemap; sourceTree = "<group>"; };
+		169FEDADF33C7B6FF512394056D853FD /* Tor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Tor-Info.plist"; sourceTree = "<group>"; };
+		214B28C9404FC713CF5EB43EA616245D /* Pods-damus-damusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-damus-damusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		24F555AFDE2908AF0CA0DABEEB42695E /* Pods-damus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-damus-dummy.m"; sourceTree = "<group>"; };
+		25A11ECAE278A3375EF27F68DBC9330E /* Pods-damusTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-damusTests"; path = Pods_damusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		273169CA1BD3CCFD5D630DC1FBCE3118 /* Pods-damusTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-damusTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		336D304F426E8CA140228D8956DE6320 /* Pods-damus-damusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-damus-damusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		345B678C32CCCEE76C9068DD8356211E /* TORAuthKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORAuthKey.h; path = Tor/Classes/Core/TORAuthKey.h; sourceTree = "<group>"; };
+		3946D476E050E82B2E72DE3059943C84 /* TORLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORLogging.m; path = Tor/Classes/CTor/TORLogging.m; sourceTree = "<group>"; };
+		46265273A8457857A384495D987A0156 /* Pods-damusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-damusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48AD1195A0F5855FB2CEA1ADE6D4EC7E /* TORNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORNode.m; path = Tor/Classes/Core/TORNode.m; sourceTree = "<group>"; };
+		4BAA9469FC6D4BF62B513FE10AC435CE /* Pods-damus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-damus.modulemap"; sourceTree = "<group>"; };
+		502610612B55F6E56FF2C7C2DADE5784 /* Pods-damus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-damus-acknowledgements.plist"; sourceTree = "<group>"; };
+		5260ED3C265D9D41B43A85EAA06D1358 /* Pods-damus-damusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-damus-damusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55FAA47C00FC5E7BEC8806AC03ED764B /* Tor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tor-umbrella.h"; sourceTree = "<group>"; };
+		563DD86E3841E342DFB23ED0C24A6511 /* TORX25519KeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORX25519KeyPair.h; path = Tor/Classes/CTor/TORX25519KeyPair.h; sourceTree = "<group>"; };
+		57332ACE77A61918645D042AD65FC8F9 /* Pods-damus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-damus-umbrella.h"; sourceTree = "<group>"; };
+		5900C89E5FD510048AB8A4D86C1081CA /* TORController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORController.h; path = Tor/Classes/Core/TORController.h; sourceTree = "<group>"; };
+		5ED8E218A3323A2CB794EE7446EF9B17 /* TORThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORThread.h; path = Tor/Classes/CTor/TORThread.h; sourceTree = "<group>"; };
+		665B26F2CE2619C3DFDAC160031E7E62 /* TORController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORController.m; path = Tor/Classes/Core/TORController.m; sourceTree = "<group>"; };
+		69759139952B09B27E708A2F6A8E409D /* TORConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORConfiguration.m; path = Tor/Classes/Core/TORConfiguration.m; sourceTree = "<group>"; };
+		69CCFED2BCDC1DE0218F30608E9D23A6 /* Tor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tor.release.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7720E1C67DFC78F999F4DF11932EE74B /* TOROnionAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOROnionAuth.m; path = Tor/Classes/Core/TOROnionAuth.m; sourceTree = "<group>"; };
+		7A7B4287687890141C11FE3A24EE31CB /* TORLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORLogging.h; path = Tor/Classes/CTor/TORLogging.h; sourceTree = "<group>"; };
+		7B228A4A4A6A915870BC30B89894D4D9 /* Pods-damusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-damusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		824384084E72042E50C90D683F747183 /* NSBundle+GeoIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+GeoIP.m"; path = "Tor/Classes/Core/NSBundle+GeoIP.m"; sourceTree = "<group>"; };
+		8A43BA7D7B5FCCCCECD2C1135C29FCC6 /* Pods-damus-damusUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-damus-damusUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8F6D736BF38E8A41095F51FDF6C147B1 /* TORCircuit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORCircuit.m; path = Tor/Classes/Core/TORCircuit.m; sourceTree = "<group>"; };
+		971CE27C675D01E45F462C8B8025D557 /* TORX25519KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORX25519KeyPair.m; path = Tor/Classes/CTor/TORX25519KeyPair.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A85E74C8D972F9BA464E6B7D0CA39FB1 /* Pods-damus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-damus-Info.plist"; sourceTree = "<group>"; };
+		AB5FCD7FC796956A37A7499AEA57C460 /* NSBundle+GeoIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+GeoIP.h"; path = "Tor/Classes/Core/NSBundle+GeoIP.h"; sourceTree = "<group>"; };
+		ABA90292C71E62F4895C596BFAE60E80 /* Pods-damus-damusUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-damus-damusUITests-dummy.m"; sourceTree = "<group>"; };
+		ADA9ABFC8E11DBA59D385A40C3B2BEF4 /* Tor */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tor; path = Tor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEBDDFD2072E57BFDD541E532C11885 /* Pods-damusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-damusTests.release.xcconfig"; sourceTree = "<group>"; };
+		B51756F0F15FE95687B3D6B6BC6409B4 /* Pods-damus-damusUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-damus-damusUITests-Info.plist"; sourceTree = "<group>"; };
+		B9950B2D790BBFADFB9DBCEE70DB24D8 /* Pods-damus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-damus.debug.xcconfig"; sourceTree = "<group>"; };
+		BAF2BABA66BB18B0D0DA0F26C6918B4E /* NSCharacterSet+PredefinedSets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCharacterSet+PredefinedSets.m"; path = "Tor/Classes/Core/NSCharacterSet+PredefinedSets.m"; sourceTree = "<group>"; };
+		C44D4EBB84FDFF839D41CDA444495C17 /* Tor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tor.debug.xcconfig; sourceTree = "<group>"; };
+		C627B1BF9957F190568D5551646497C2 /* Pods-damus-damusUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-damus-damusUITests"; path = Pods_damus_damusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CD7753C8AAB32351F98E98A4956CAE /* TORNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORNode.h; path = Tor/Classes/Core/TORNode.h; sourceTree = "<group>"; };
+		CA3A48FD68751EBC98E10C90C26C7C6E /* Tor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tor-dummy.m"; sourceTree = "<group>"; };
+		CCBA13C207234124C78BDD609F26A8A8 /* Pods-damusTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-damusTests-umbrella.h"; sourceTree = "<group>"; };
+		D340649751ABF457C533C085629F75A1 /* Pods-damus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-damus-frameworks.sh"; sourceTree = "<group>"; };
+		D3B553479A0AF617EE277A40AD6953D8 /* TORThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORThread.m; path = Tor/Classes/CTor/TORThread.m; sourceTree = "<group>"; };
+		D46D2AA9349E25A0B7C5F594C9CB289B /* Pods-damus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-damus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6BAA01EEDFAF1A21AAFE26E4CDFCFE1 /* TORConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORConfiguration.h; path = Tor/Classes/Core/TORConfiguration.h; sourceTree = "<group>"; };
+		DA4D6A93C9084CB642E8B039F9CC8220 /* Pods-damusTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-damusTests-Info.plist"; sourceTree = "<group>"; };
+		DBACF1F96C2CDE043B048623E2326C8E /* Pods-damus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-damus.release.xcconfig"; sourceTree = "<group>"; };
+		E035E3C619DF05A3877AF801772C2A40 /* TORControlCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORControlCommand.h; path = Tor/Classes/Core/TORControlCommand.h; sourceTree = "<group>"; };
+		E0396DDA7F7104F802658BBAD73A03E9 /* Pods-damusTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-damusTests.modulemap"; sourceTree = "<group>"; };
+		E3A20F7047AC1368806C7D6CD008CAEE /* Pods-damus-damusUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-damus-damusUITests-umbrella.h"; sourceTree = "<group>"; };
+		E90651B91330B3C864BB3222A5555398 /* Tor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tor-prefix.pch"; sourceTree = "<group>"; };
+		F685FD1A9516F1F6909040899AE9EF38 /* NSCharacterSet+PredefinedSets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCharacterSet+PredefinedSets.h"; path = "Tor/Classes/Core/NSCharacterSet+PredefinedSets.h"; sourceTree = "<group>"; };
+		F72D6DCB467D85BA981CA055D9737B99 /* Pods-damus-damusUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-damus-damusUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F82C1E1484B849A53A6C21FC6BE0DB96 /* TOROnionAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOROnionAuth.h; path = Tor/Classes/Core/TOROnionAuth.h; sourceTree = "<group>"; };
+		FE34F42BB67E40E77FECE8EB1D035BCE /* TORCircuit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORCircuit.h; path = Tor/Classes/Core/TORCircuit.h; sourceTree = "<group>"; };
+		FFE7E1BE77782400D77A3E94BE179020 /* TORAuthKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORAuthKey.m; path = Tor/Classes/Core/TORAuthKey.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02B3CF7D70F3771549885DA4CF7FBA15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C615FC17B6A4E2C68EA3FE837F48863 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C25A124481C60DB7E04FD6E02EE095F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981BE52F31155D3529C4C842092EBB62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BE96C7E347CA6FFFE922F92E9AABBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B8EF98B558C8269762339D213D02AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE67E12081C85B24E217A9A6EB031A3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0932437038257BB7D75F8C695517A6BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C60B01727F4EB9C32385BD6685C2EB9 /* Pods-damusTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0396DDA7F7104F802658BBAD73A03E9 /* Pods-damusTests.modulemap */,
+				46265273A8457857A384495D987A0156 /* Pods-damusTests-acknowledgements.markdown */,
+				273169CA1BD3CCFD5D630DC1FBCE3118 /* Pods-damusTests-acknowledgements.plist */,
+				01E4F1EC3852BC3E32CBB73D0266F6BB /* Pods-damusTests-dummy.m */,
+				DA4D6A93C9084CB642E8B039F9CC8220 /* Pods-damusTests-Info.plist */,
+				CCBA13C207234124C78BDD609F26A8A8 /* Pods-damusTests-umbrella.h */,
+				7B228A4A4A6A915870BC30B89894D4D9 /* Pods-damusTests.debug.xcconfig */,
+				AEEBDDFD2072E57BFDD541E532C11885 /* Pods-damusTests.release.xcconfig */,
+			);
+			name = "Pods-damusTests";
+			path = "Target Support Files/Pods-damusTests";
+			sourceTree = "<group>";
+		};
+		47DABC71670DBD50A5F1B15497F743D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05C9D90FE02F56508EE64D9E8C3AFBF3 /* Pods-damus */,
+				C627B1BF9957F190568D5551646497C2 /* Pods-damus-damusUITests */,
+				25A11ECAE278A3375EF27F68DBC9330E /* Pods-damusTests */,
+				ADA9ABFC8E11DBA59D385A40C3B2BEF4 /* Tor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		785F7A44554F0033E9C2CE46628D9898 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB5FCD7FC796956A37A7499AEA57C460 /* NSBundle+GeoIP.h */,
+				824384084E72042E50C90D683F747183 /* NSBundle+GeoIP.m */,
+				F685FD1A9516F1F6909040899AE9EF38 /* NSCharacterSet+PredefinedSets.h */,
+				BAF2BABA66BB18B0D0DA0F26C6918B4E /* NSCharacterSet+PredefinedSets.m */,
+				345B678C32CCCEE76C9068DD8356211E /* TORAuthKey.h */,
+				FFE7E1BE77782400D77A3E94BE179020 /* TORAuthKey.m */,
+				FE34F42BB67E40E77FECE8EB1D035BCE /* TORCircuit.h */,
+				8F6D736BF38E8A41095F51FDF6C147B1 /* TORCircuit.m */,
+				D6BAA01EEDFAF1A21AAFE26E4CDFCFE1 /* TORConfiguration.h */,
+				69759139952B09B27E708A2F6A8E409D /* TORConfiguration.m */,
+				E035E3C619DF05A3877AF801772C2A40 /* TORControlCommand.h */,
+				5900C89E5FD510048AB8A4D86C1081CA /* TORController.h */,
+				665B26F2CE2619C3DFDAC160031E7E62 /* TORController.m */,
+				0E2B3AADE8E48781F37E3665C8BCBC65 /* TORControlReplyCode.h */,
+				C8CD7753C8AAB32351F98E98A4956CAE /* TORNode.h */,
+				48AD1195A0F5855FB2CEA1ADE6D4EC7E /* TORNode.m */,
+				F82C1E1484B849A53A6C21FC6BE0DB96 /* TOROnionAuth.h */,
+				7720E1C67DFC78F999F4DF11932EE74B /* TOROnionAuth.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7BF5151C0478F73A36D34DF08E368DE5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF4938CC914F9C628F93EFE966C28546 /* Pods-damus */,
+				F7EAC106191674A29B22A64C37C809F8 /* Pods-damus-damusUITests */,
+				0C60B01727F4EB9C32385BD6685C2EB9 /* Pods-damusTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B110661C02232F698AA437FADB68073C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C78EB306802E4957C77AF312DD5C6F72 /* Tor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C78EB306802E4957C77AF312DD5C6F72 /* Tor */ = {
+			isa = PBXGroup;
+			children = (
+				785F7A44554F0033E9C2CE46628D9898 /* Core */,
+				DE51570D95A4DC634709E9AFC322C2A1 /* CTor */,
+				CCEB398387D58F13F7788C0215598B38 /* Support Files */,
+			);
+			name = Tor;
+			path = Tor;
+			sourceTree = "<group>";
+		};
+		CCEB398387D58F13F7788C0215598B38 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D5195979703163B06F3A967BD1D7B0 /* Tor.modulemap */,
+				CA3A48FD68751EBC98E10C90C26C7C6E /* Tor-dummy.m */,
+				169FEDADF33C7B6FF512394056D853FD /* Tor-Info.plist */,
+				E90651B91330B3C864BB3222A5555398 /* Tor-prefix.pch */,
+				55FAA47C00FC5E7BEC8806AC03ED764B /* Tor-umbrella.h */,
+				C44D4EBB84FDFF839D41CDA444495C17 /* Tor.debug.xcconfig */,
+				69CCFED2BCDC1DE0218F30608E9D23A6 /* Tor.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Tor";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B110661C02232F698AA437FADB68073C /* Pods */,
+				47DABC71670DBD50A5F1B15497F743D3 /* Products */,
+				7BF5151C0478F73A36D34DF08E368DE5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE51570D95A4DC634709E9AFC322C2A1 /* CTor */ = {
+			isa = PBXGroup;
+			children = (
+				7A7B4287687890141C11FE3A24EE31CB /* TORLogging.h */,
+				3946D476E050E82B2E72DE3059943C84 /* TORLogging.m */,
+				5ED8E218A3323A2CB794EE7446EF9B17 /* TORThread.h */,
+				D3B553479A0AF617EE277A40AD6953D8 /* TORThread.m */,
+				563DD86E3841E342DFB23ED0C24A6511 /* TORX25519KeyPair.h */,
+				971CE27C675D01E45F462C8B8025D557 /* TORX25519KeyPair.m */,
+			);
+			name = CTor;
+			sourceTree = "<group>";
+		};
+		F7EAC106191674A29B22A64C37C809F8 /* Pods-damus-damusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01B933411B90C375DE4736AC2AB34758 /* Pods-damus-damusUITests.modulemap */,
+				F72D6DCB467D85BA981CA055D9737B99 /* Pods-damus-damusUITests-acknowledgements.markdown */,
+				214B28C9404FC713CF5EB43EA616245D /* Pods-damus-damusUITests-acknowledgements.plist */,
+				ABA90292C71E62F4895C596BFAE60E80 /* Pods-damus-damusUITests-dummy.m */,
+				8A43BA7D7B5FCCCCECD2C1135C29FCC6 /* Pods-damus-damusUITests-frameworks.sh */,
+				B51756F0F15FE95687B3D6B6BC6409B4 /* Pods-damus-damusUITests-Info.plist */,
+				E3A20F7047AC1368806C7D6CD008CAEE /* Pods-damus-damusUITests-umbrella.h */,
+				336D304F426E8CA140228D8956DE6320 /* Pods-damus-damusUITests.debug.xcconfig */,
+				5260ED3C265D9D41B43A85EAA06D1358 /* Pods-damus-damusUITests.release.xcconfig */,
+			);
+			name = "Pods-damus-damusUITests";
+			path = "Target Support Files/Pods-damus-damusUITests";
+			sourceTree = "<group>";
+		};
+		FF4938CC914F9C628F93EFE966C28546 /* Pods-damus */ = {
+			isa = PBXGroup;
+			children = (
+				4BAA9469FC6D4BF62B513FE10AC435CE /* Pods-damus.modulemap */,
+				D46D2AA9349E25A0B7C5F594C9CB289B /* Pods-damus-acknowledgements.markdown */,
+				502610612B55F6E56FF2C7C2DADE5784 /* Pods-damus-acknowledgements.plist */,
+				24F555AFDE2908AF0CA0DABEEB42695E /* Pods-damus-dummy.m */,
+				D340649751ABF457C533C085629F75A1 /* Pods-damus-frameworks.sh */,
+				A85E74C8D972F9BA464E6B7D0CA39FB1 /* Pods-damus-Info.plist */,
+				57332ACE77A61918645D042AD65FC8F9 /* Pods-damus-umbrella.h */,
+				B9950B2D790BBFADFB9DBCEE70DB24D8 /* Pods-damus.debug.xcconfig */,
+				DBACF1F96C2CDE043B048623E2326C8E /* Pods-damus.release.xcconfig */,
+			);
+			name = "Pods-damus";
+			path = "Target Support Files/Pods-damus";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1FD9E9531D9D7BC07C709565A407FCA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6FAC9C605789811EB8DF3A9B65AACB /* Pods-damus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48FCD5355777345EBC22680D9CFF26F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436C1E979BE0B9A303FFC399A5A5D285 /* NSBundle+GeoIP.h in Headers */,
+				882F719501F7AC5F1EA547D21AC53306 /* NSCharacterSet+PredefinedSets.h in Headers */,
+				CD0222471D80141ECA2D6CEDBA1C1ACC /* Tor-umbrella.h in Headers */,
+				494DD925F853173BE2FF6FAD9D221ED1 /* TORAuthKey.h in Headers */,
+				2E130C16B421087BB848950F31D2CF04 /* TORCircuit.h in Headers */,
+				45053561ADABECB5EA30D9C4EBA41A60 /* TORConfiguration.h in Headers */,
+				26AE58409AEA2184A13D7F4708EA1F4A /* TORControlCommand.h in Headers */,
+				E1DC10B35695A90D54149E3F5014948C /* TORController.h in Headers */,
+				7E63089C6B01F434375F565B8F3F6C4C /* TORControlReplyCode.h in Headers */,
+				63D9D6459EA8D96040080AB4C8AF57E3 /* TORLogging.h in Headers */,
+				2611F177696E2A66F975380A6A454CF3 /* TORNode.h in Headers */,
+				5EF69D098AC20C9427FE3371AB1FE328 /* TOROnionAuth.h in Headers */,
+				5AB51DA4FEBA799A220B1452D854D6B8 /* TORThread.h in Headers */,
+				FE461BCC39DBA6E6DA81C6FEC6AC208F /* TORX25519KeyPair.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F540934D1643517B3A19634895C92D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A5625731DAEB42E62CC3621AD1546A /* Pods-damusTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0693B0D4EE4354517582D90A9E58F1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3815DCAC9D5105C6CAADA827A8655EB4 /* Pods-damus-damusUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1683B15288211DEEE0837DE5FC75AD39 /* Pods-damus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56E2BEE5D63EC85CF4221BDDFAFF0477 /* Build configuration list for PBXNativeTarget "Pods-damus" */;
+			buildPhases = (
+				1FD9E9531D9D7BC07C709565A407FCA5 /* Headers */,
+				0E6F9C62D486440D31C55B221C77FA1A /* Sources */,
+				02B3CF7D70F3771549885DA4CF7FBA15 /* Frameworks */,
+				F413801837F900E250BF5EE966C5E9C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3476F2BE10BEDF012B3591AE23EA33 /* PBXTargetDependency */,
+			);
+			name = "Pods-damus";
+			productName = Pods_damus;
+			productReference = 05C9D90FE02F56508EE64D9E8C3AFBF3 /* Pods-damus */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFA4383E7CE3B1B637884AC967B81A0E /* Tor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447C5F67EF9D466F114FD0FBAFE0E6CC /* Build configuration list for PBXNativeTarget "Tor" */;
+			buildPhases = (
+				48FCD5355777345EBC22680D9CFF26F1 /* Headers */,
+				F07DE6704FB4B627E429EF9E9C73C4A4 /* [CP-User] Build XZ */,
+				A396C00411D3200C7880FE9275611553 /* [CP-User] Build OpenSSL */,
+				9C0C53D2DB55B8F699140E7A36D1E6B1 /* [CP-User] Build libevent */,
+				E6F145DAF81BCDB22DB2C7A297E24163 /* [CP-User] Build Tor */,
+				4685487245ACAD0BE9426A6714F06F1D /* Sources */,
+				59BE96C7E347CA6FFFE922F92E9AABBE /* Frameworks */,
+				FC2E86A8043D1F47F4AAA17760C498CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tor;
+			productName = Tor;
+			productReference = ADA9ABFC8E11DBA59D385A40C3B2BEF4 /* Tor */;
+			productType = "com.apple.product-type.framework";
+		};
+		C46872E34484C50748F170C9827CD014 /* Pods-damus-damusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8B4276DB60E151F8026D4CD6194C8D /* Build configuration list for PBXNativeTarget "Pods-damus-damusUITests" */;
+			buildPhases = (
+				E0693B0D4EE4354517582D90A9E58F1D /* Headers */,
+				37A66C7A793D0A42BB3AD210B11EF84D /* Sources */,
+				1C25A124481C60DB7E04FD6E02EE095F /* Frameworks */,
+				DCD01C97B20D79BAC0B37CBA96AF974A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03036403E7450B4FEDFB1409092B65CA /* PBXTargetDependency */,
+			);
+			name = "Pods-damus-damusUITests";
+			productName = Pods_damus_damusUITests;
+			productReference = C627B1BF9957F190568D5551646497C2 /* Pods-damus-damusUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D48B68945A6A9BB467C07A61F989A03F /* Pods-damusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5D62B877C0B8952EF014CC22AED33E /* Build configuration list for PBXNativeTarget "Pods-damusTests" */;
+			buildPhases = (
+				D9F540934D1643517B3A19634895C92D /* Headers */,
+				D0631E66F540A50E3C45C0588868B1DA /* Sources */,
+				EE67E12081C85B24E217A9A6EB031A3F /* Frameworks */,
+				300F44766CBDC20F0A0F6576670F9A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69BB2DC38059321884186E32B098B1B5 /* PBXTargetDependency */,
+			);
+			name = "Pods-damusTests";
+			productName = Pods_damusTests;
+			productReference = 25A11ECAE278A3375EF27F68DBC9330E /* Pods-damusTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 47DABC71670DBD50A5F1B15497F743D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1683B15288211DEEE0837DE5FC75AD39 /* Pods-damus */,
+				C46872E34484C50748F170C9827CD014 /* Pods-damus-damusUITests */,
+				D48B68945A6A9BB467C07A61F989A03F /* Pods-damusTests */,
+				AFA4383E7CE3B1B637884AC967B81A0E /* Tor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		300F44766CBDC20F0A0F6576670F9A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD01C97B20D79BAC0B37CBA96AF974A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F413801837F900E250BF5EE966C5E9C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2E86A8043D1F47F4AAA17760C498CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C0C53D2DB55B8F699140E7A36D1E6B1 /* [CP-User] Build libevent */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build libevent";
+			outputPaths = (
+				"libevent-always-execute-this-but-supress-warning",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${PODS_TARGET_SRCROOT}/Tor/libevent\"\n../libevent.sh\n";
+		};
+		A396C00411D3200C7880FE9275611553 /* [CP-User] Build OpenSSL */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build OpenSSL";
+			outputPaths = (
+				"openssl-always-execute-this-but-supress-warning",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${PODS_TARGET_SRCROOT}/Tor/openssl\"\n../openssl.sh\n";
+		};
+		E6F145DAF81BCDB22DB2C7A297E24163 /* [CP-User] Build Tor */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build Tor";
+			outputPaths = (
+				"tor-always-execute-this-but-supress-warning",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${PODS_TARGET_SRCROOT}/Tor/tor\"\n../tor.sh\n";
+		};
+		F07DE6704FB4B627E429EF9E9C73C4A4 /* [CP-User] Build XZ */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build XZ";
+			outputPaths = (
+				"xz-always-execute-this-but-supress-warning",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${PODS_TARGET_SRCROOT}/Tor/xz\"\n../xz.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E6F9C62D486440D31C55B221C77FA1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2AE939CE4606A1BADEA391E1AFD137 /* Pods-damus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A66C7A793D0A42BB3AD210B11EF84D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FECDBA17371DC679189143B66BBFD0C /* Pods-damus-damusUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4685487245ACAD0BE9426A6714F06F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381B7BF30DBFAAC1DAE2B1880D164436 /* NSBundle+GeoIP.m in Sources */,
+				E53A32AC0C5A6AAFEC3741D1A60BE2A9 /* NSCharacterSet+PredefinedSets.m in Sources */,
+				CBBCBE28EFD2CD840859921D60DD6710 /* Tor-dummy.m in Sources */,
+				C3AB25BEE855F2BD5C2464F2CBC6487B /* TORAuthKey.m in Sources */,
+				45BC107449BDC788A2627D9BAC856A19 /* TORCircuit.m in Sources */,
+				A041118A9C829A5C8C4A0AF329147FAB /* TORConfiguration.m in Sources */,
+				3A0596A742E2C53B27ECDBD23E7C068B /* TORController.m in Sources */,
+				7716277E37BB3692F5F6A271210EE66E /* TORLogging.m in Sources */,
+				DC790F7FC76922B0E49592B9092A205B /* TORNode.m in Sources */,
+				9BA03406DD5644B87F3248E6686B40CF /* TOROnionAuth.m in Sources */,
+				0E137FB61EECE2D1785637D6726DFE8D /* TORThread.m in Sources */,
+				335DEA30448AB10FBCB222B8277B1913 /* TORX25519KeyPair.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0631E66F540A50E3C45C0588868B1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56919379542627A5F6C468B420F58DBD /* Pods-damusTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03036403E7450B4FEDFB1409092B65CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tor;
+			target = AFA4383E7CE3B1B637884AC967B81A0E /* Tor */;
+			targetProxy = 7DAB07C06FBBCD8B573F73B14BF86521 /* PBXContainerItemProxy */;
+		};
+		69BB2DC38059321884186E32B098B1B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-damus";
+			target = 1683B15288211DEEE0837DE5FC75AD39 /* Pods-damus */;
+			targetProxy = BE0404BDC31B87007E078B674947154E /* PBXContainerItemProxy */;
+		};
+		FC3476F2BE10BEDF012B3591AE23EA33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tor;
+			target = AFA4383E7CE3B1B637884AC967B81A0E /* Tor */;
+			targetProxy = 570FF8DBF4330520CE3B3C08612E7189 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55C1492E9042883312EA94A2691DFC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44D4EBB84FDFF839D41CDA444495C17 /* Tor.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tor/Tor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tor/Tor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tor/Tor.modulemap";
+				PRODUCT_MODULE_NAME = Tor;
+				PRODUCT_NAME = Tor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		592B277ADE32EB74D857445EBCD919E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBACF1F96C2CDE043B048623E2326C8E /* Pods-damus.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-damus/Pods-damus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-damus/Pods-damus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		812602E62865839E78FE423F028E2C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B228A4A4A6A915870BC30B89894D4D9 /* Pods-damusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-damusTests/Pods-damusTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-damusTests/Pods-damusTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84D247E918C05DD00900CF6EF0B6959E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9950B2D790BBFADFB9DBCEE70DB24D8 /* Pods-damus.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-damus/Pods-damus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-damus/Pods-damus.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90093F3ABC4D6BD2EC1DE37C2AF8E20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEEBDDFD2072E57BFDD541E532C11885 /* Pods-damusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-damusTests/Pods-damusTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-damusTests/Pods-damusTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A5DDCB9D45FDC8C7CA606F99B74C4678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CCFED2BCDC1DE0218F30608E9D23A6 /* Tor.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tor/Tor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tor/Tor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tor/Tor.modulemap";
+				PRODUCT_MODULE_NAME = Tor;
+				PRODUCT_NAME = Tor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6940F38DF1869AE4857096E7A7A0D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336D304F426E8CA140228D8956DE6320 /* Pods-damus-damusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFEE4CDEC3961188E1BEC85698A51785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5260ED3C265D9D41B43A85EAA06D1358 /* Pods-damus-damusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		447C5F67EF9D466F114FD0FBAFE0E6CC /* Build configuration list for PBXNativeTarget "Tor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C1492E9042883312EA94A2691DFC34 /* Debug */,
+				A5DDCB9D45FDC8C7CA606F99B74C4678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56E2BEE5D63EC85CF4221BDDFAFF0477 /* Build configuration list for PBXNativeTarget "Pods-damus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D247E918C05DD00900CF6EF0B6959E /* Debug */,
+				592B277ADE32EB74D857445EBCD919E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F5D62B877C0B8952EF014CC22AED33E /* Build configuration list for PBXNativeTarget "Pods-damusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812602E62865839E78FE423F028E2C2C /* Debug */,
+				90093F3ABC4D6BD2EC1DE37C2AF8E20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8B4276DB60E151F8026D4CD6194C8D /* Build configuration list for PBXNativeTarget "Pods-damus-damusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6940F38DF1869AE4857096E7A7A0D8A /* Debug */,
+				BFEE4CDEC3961188E1BEC85698A51785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

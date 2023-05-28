@@ -265,15 +265,18 @@
 		7C902AE32981D55B002AB16E /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C902AE22981D55B002AB16E /* ZoomableScrollView.swift */; };
 		7C95CAEE299DCEF1009DCB67 /* KFOptionSetter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95CAED299DCEF1009DCB67 /* KFOptionSetter+.swift */; };
 		7CFF6317299FEFE5005D382A /* SelectableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF6316299FEFE5005D382A /* SelectableText.swift */; };
+		8340A6FDF60D0DA16E81AC48 /* Pods_damus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4412B01E6FD0D358A101F9 /* Pods_damus.framework */; };
 		9609F058296E220800069BF3 /* BannerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609F057296E220800069BF3 /* BannerImageView.swift */; };
 		9C83F89329A937B900136C08 /* TextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C83F89229A937B900136C08 /* TextViewWrapper.swift */; };
 		9CA876E229A00CEA0003B9A3 /* AttachMediaUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA876E129A00CE90003B9A3 /* AttachMediaUtility.swift */; };
 		BA693074295D649800ADDB87 /* UserSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA693073295D649800ADDB87 /* UserSettingsStore.swift */; };
 		BAB68BED29543FA3007BA466 /* SelectWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB68BEC29543FA3007BA466 /* SelectWalletView.swift */; };
 		DD597CBD2963D85A00C64D32 /* MarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD597CBC2963D85A00C64D32 /* MarkdownTests.swift */; };
+		E23E1744D21B4BEA52332B1E /* Pods_damus_damusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1932291A9ACD3DE36101FE4B /* Pods_damus_damusUITests.framework */; };
 		E4B336A729F6188300B71996 /* TorTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B336A629F6188300B71996 /* TorTransport.swift */; };
 		E990020F2955F837003BBC5A /* EditMetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E990020E2955F837003BBC5A /* EditMetadataView.swift */; };
 		E9E4ED0B295867B900DD7078 /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E4ED0A295867B900DD7078 /* ThreadView.swift */; };
+		F29B2B345302FCC2B99574FD /* Pods_damusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A9883AE367BE170E8EC7B2 /* Pods_damusTests.framework */; };
 		F757933A29D7AECD007DEAC1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757933929D7AECD007DEAC1 /* ImagePicker.swift */; };
 		F75BA12D29A1855400E10810 /* BookmarksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BA12C29A1855400E10810 /* BookmarksManager.swift */; };
 		F75BA12F29A18EF500E10810 /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BA12E29A18EF500E10810 /* BookmarksView.swift */; };
@@ -302,6 +305,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03A9883AE367BE170E8EC7B2 /* Pods_damusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_damusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0878886887CEF3F487B4A0CE /* Pods-damusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damusTests.release.xcconfig"; path = "Target Support Files/Pods-damusTests/Pods-damusTests.release.xcconfig"; sourceTree = "<group>"; };
+		1932291A9ACD3DE36101FE4B /* Pods_damus_damusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_damus_damusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3165648A295B70D500C64604 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		3169CAE5294E69C000EE4006 /* EmptyTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTimelineView.swift; sourceTree = "<group>"; };
 		3169CAEC294FCCFC00EE4006 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = damus/Util/Constants.swift; sourceTree = SOURCE_ROOT; };
@@ -404,6 +410,7 @@
 		3AF6336829884C6B0005672A /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3AF6336929884C6B0005672A /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3AF6336A29884C6B0005672A /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "pt-PT"; path = "pt-PT.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		3EB734B87F338F72D01C2DE4 /* Pods-damus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damus.debug.xcconfig"; path = "Target Support Files/Pods-damus/Pods-damus.debug.xcconfig"; sourceTree = "<group>"; };
 		4C06670028FC7C5900038D2A /* RelayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayView.swift; sourceTree = "<group>"; };
 		4C06670528FCB08600038D2A /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
 		4C06670828FDE64700038D2A /* damus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "damus-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -665,6 +672,7 @@
 		4CFF8F6C29CD022E008DB934 /* WideEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideEventView.swift; sourceTree = "<group>"; };
 		4FE60CDC295E1C5E00105A1F /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		50A50A8C29A09E1C00C01BE7 /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
+		55EB380E2CE27B7E678B3597 /* Pods-damusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damusTests.debug.xcconfig"; path = "Target Support Files/Pods-damusTests/Pods-damusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C42E78B29DB76D90086AAC1 /* EmptyUserSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyUserSearchView.swift; sourceTree = "<group>"; };
 		5C513FB9297F72980072348F /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
 		5C513FCB2984ACA60072348F /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
@@ -673,20 +681,24 @@
 		643EA5C7296B764E005081BB /* RelayFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayFilterView.swift; sourceTree = "<group>"; };
 		647D9A8C2968520300A295DE /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		64FBD06E296255C400D9D3B2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		676E252F585BAA9168CACB5C /* Pods-damus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damus.release.xcconfig"; path = "Target Support Files/Pods-damus/Pods-damus.release.xcconfig"; sourceTree = "<group>"; };
 		7C0F392E29B57CAF0039859C /* Binding+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+.swift"; sourceTree = "<group>"; };
 		7C60CAEE298471A1009C80D6 /* CoreSVG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSVG.swift; sourceTree = "<group>"; };
 		7C902AE22981D55B002AB16E /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 		7C95CAED299DCEF1009DCB67 /* KFOptionSetter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KFOptionSetter+.swift"; sourceTree = "<group>"; };
 		7CFF6316299FEFE5005D382A /* SelectableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableText.swift; sourceTree = "<group>"; };
+		7E4412B01E6FD0D358A101F9 /* Pods_damus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_damus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9609F057296E220800069BF3 /* BannerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImageView.swift; sourceTree = "<group>"; };
 		9C83F89229A937B900136C08 /* TextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWrapper.swift; sourceTree = "<group>"; };
 		9CA876E129A00CE90003B9A3 /* AttachMediaUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachMediaUtility.swift; sourceTree = "<group>"; };
 		BA693073295D649800ADDB87 /* UserSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsStore.swift; sourceTree = "<group>"; };
 		BAB68BEC29543FA3007BA466 /* SelectWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWalletView.swift; sourceTree = "<group>"; };
+		CAED4838035E403AFDB882D0 /* Pods-damus-damusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damus-damusUITests.release.xcconfig"; path = "Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD597CBC2963D85A00C64D32 /* MarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTests.swift; sourceTree = "<group>"; };
 		E4B336A629F6188300B71996 /* TorTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorTransport.swift; sourceTree = "<group>"; };
 		E990020E2955F837003BBC5A /* EditMetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMetadataView.swift; sourceTree = "<group>"; };
 		E9E4ED0A295867B900DD7078 /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
+		EAB86D286704238B6E9DBAA0 /* Pods-damus-damusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damus-damusUITests.debug.xcconfig"; path = "Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F757933929D7AECD007DEAC1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F75BA12C29A1855400E10810 /* BookmarksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksManager.swift; sourceTree = "<group>"; };
 		F75BA12E29A18EF500E10810 /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
@@ -706,6 +718,7 @@
 				6C7DE41F2955169800E66263 /* Vault in Frameworks */,
 				4CE6DF1227F7A2B300C66700 /* Starscream in Frameworks */,
 				4C649881286E0EE300EAE2B3 /* secp256k1 in Frameworks */,
+				8340A6FDF60D0DA16E81AC48 /* Pods_damus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +726,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29B2B345302FCC2B99574FD /* Pods_damusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +734,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23E1744D21B4BEA52332B1E /* Pods_damus_damusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1159,6 +1174,7 @@
 				4CE6DF0027F7A08200C66700 /* damusUITests */,
 				4CE6DEE427F7A08100C66700 /* Products */,
 				4CEE2AE62804F57B00AB5EEF /* Frameworks */,
+				7B096742BC60CC8EE4CF553D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1267,6 +1283,9 @@
 			isa = PBXGroup;
 			children = (
 				4CEE2AE72804F57C00AB5EEF /* libsecp256k1.a */,
+				7E4412B01E6FD0D358A101F9 /* Pods_damus.framework */,
+				1932291A9ACD3DE36101FE4B /* Pods_damus_damusUITests.framework */,
+				03A9883AE367BE170E8EC7B2 /* Pods_damusTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1308,6 +1327,20 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		7B096742BC60CC8EE4CF553D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EB734B87F338F72D01C2DE4 /* Pods-damus.debug.xcconfig */,
+				676E252F585BAA9168CACB5C /* Pods-damus.release.xcconfig */,
+				EAB86D286704238B6E9DBAA0 /* Pods-damus-damusUITests.debug.xcconfig */,
+				CAED4838035E403AFDB882D0 /* Pods-damus-damusUITests.release.xcconfig */,
+				55EB380E2CE27B7E678B3597 /* Pods-damusTests.debug.xcconfig */,
+				0878886887CEF3F487B4A0CE /* Pods-damusTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7C0F392D29B57C8F0039859C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -1332,9 +1365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE6DF0727F7A08200C66700 /* Build configuration list for PBXNativeTarget "damus" */;
 			buildPhases = (
+				0559E233CB9D58BEF1696906 /* [CP] Check Pods Manifest.lock */,
 				4CE6DEDF27F7A08100C66700 /* Sources */,
 				4CE6DEE027F7A08100C66700 /* Frameworks */,
 				4CE6DEE127F7A08100C66700 /* Resources */,
+				7AEA6397ED0529AD01C86280 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1355,6 +1390,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE6DF0A27F7A08200C66700 /* Build configuration list for PBXNativeTarget "damusTests" */;
 			buildPhases = (
+				1ADBB7A2246540ED11998818 /* [CP] Check Pods Manifest.lock */,
 				4CE6DEEF27F7A08200C66700 /* Sources */,
 				4CE6DEF027F7A08200C66700 /* Frameworks */,
 				4CE6DEF127F7A08200C66700 /* Resources */,
@@ -1373,9 +1409,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE6DF0D27F7A08200C66700 /* Build configuration list for PBXNativeTarget "damusUITests" */;
 			buildPhases = (
+				E5F7817BCBC3CE984329AB6D /* [CP] Check Pods Manifest.lock */,
 				4CE6DEF927F7A08200C66700 /* Sources */,
 				4CE6DEFA27F7A08200C66700 /* Frameworks */,
 				4CE6DEFB27F7A08200C66700 /* Resources */,
+				1DD904F1CDE73C5463A1C501 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1449,7 +1487,7 @@
 			mainGroup = 4CE6DEDA27F7A08100C66700;
 			packageReferences = (
 				4CE6DF1027F7A2B300C66700 /* XCRemoteSwiftPackageReference "Starscream" */,
-				4C64987F286E0EE300EAE2B3 /* XCRemoteSwiftPackageReference "secp256k1" */,
+				4C64987F286E0EE300EAE2B3 /* XCRemoteSwiftPackageReference "secp256k1.swift" */,
 				4C06670228FC7EC500038D2A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				6C7DE41D2955169800E66263 /* XCRemoteSwiftPackageReference "Vault" */,
 			);
@@ -1492,6 +1530,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0559E233CB9D58BEF1696906 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-damus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ADBB7A2246540ED11998818 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-damusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DD904F1CDE73C5463A1C501 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-damus-damusUITests/Pods-damus-damusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AEA6397ED0529AD01C86280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-damus/Pods-damus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-damus/Pods-damus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-damus/Pods-damus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F7817BCBC3CE984329AB6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-damus-damusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CE6DEDF27F7A08100C66700 /* Sources */ = {
@@ -2026,6 +2167,7 @@
 		};
 		4CE6DF0827F7A08200C66700 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB734B87F338F72D01C2DE4 /* Pods-damus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2073,6 +2215,7 @@
 		};
 		4CE6DF0927F7A08200C66700 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676E252F585BAA9168CACB5C /* Pods-damus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2119,6 +2262,7 @@
 		};
 		4CE6DF0B27F7A08200C66700 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EB380E2CE27B7E678B3597 /* Pods-damusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2139,6 +2283,7 @@
 		};
 		4CE6DF0C27F7A08200C66700 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0878886887CEF3F487B4A0CE /* Pods-damusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2159,6 +2304,7 @@
 		};
 		4CE6DF0E27F7A08200C66700 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB86D286704238B6E9DBAA0 /* Pods-damus-damusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2177,6 +2323,7 @@
 		};
 		4CE6DF0F27F7A08200C66700 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAED4838035E403AFDB882D0 /* Pods-damus-damusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2243,7 +2390,7 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		4C64987F286E0EE300EAE2B3 /* XCRemoteSwiftPackageReference "secp256k1" */ = {
+		4C64987F286E0EE300EAE2B3 /* XCRemoteSwiftPackageReference "secp256k1.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jb55/secp256k1.swift";
 			requirement = {
@@ -2277,7 +2424,7 @@
 		};
 		4C649880286E0EE300EAE2B3 /* secp256k1 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4C64987F286E0EE300EAE2B3 /* XCRemoteSwiftPackageReference "secp256k1" */;
+			package = 4C64987F286E0EE300EAE2B3 /* XCRemoteSwiftPackageReference "secp256k1.swift" */;
 			productName = secp256k1;
 		};
 		4CE6DF1127F7A2B300C66700 /* Starscream */ = {

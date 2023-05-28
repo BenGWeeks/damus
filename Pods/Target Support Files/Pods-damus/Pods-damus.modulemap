@@ -1,0 +1,6 @@
+framework module Pods_damus {
+  umbrella header "Pods-damus-umbrella.h"
+
+  export *
+  module * { export * }
+}
